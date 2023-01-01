@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///F:/Coderhouse-Javascript-final-project-Shopping-cart-master/pages/products.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Store | Products</title>
+<!--Bootstrap--> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Custom CSS-->
+<link rel="stylesheet" href="Estilos/estilos.css">
+<!--Toastify-->  
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> -->
+    
+    <!--Bootstrap-->
+    <!-- <link rel="stylesheet" href="./Galaxy Store _ Products_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!--Font Awesome-->
+    <!-- <link rel="stylesheet" href="./Galaxy Store _ Products_files/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
+    <!--Custom CSS-->
+    <!-- <link rel="stylesheet" href="./Galaxy Store _ Products_files/estilos.css"> -->
+    <!--Toastify-->
+    <!-- <link rel="stylesheet" type="text/css" href="./Galaxy Store _ Products_files/toastify.min.css"> -->
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar page">
+        <div class="navbar-center">
+            <button class="toggle-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="products.html" class="nav-link">products</a>
+                </li>
+                <li>
+                    <a href="pages/about.html" class="nav-link">about</a>
+                </li>
+            </ul>  
+            <!-- logo -->
+            
+            <img src="images/otras/log1.png" class="nav-logo" alt="store logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- hero -->
+    <section class="page-hero">
+        <div class="section-center">
+            <h3 class="page-hero-title"><a href="index.html">Home</a> / Products</h3>
+        </div>
+    </section>
+    <!-- end of hero -->
+    <!-- products -->
+    <section class="products" id="products">
+    <!-- filters -->
+        <div class="filters">
+            <div class="filters-container">
+                <!-- search -->
+                
+                <form action="products.html" class="section-title-filter">
+                    <input id="filterInput" type="search" placeholder="Search. . ." data-search="">
+                </form>
+                <!-- categories -->
+                <h5>Company</h5>
+                <article class="companies">
+                    <button class="company-btn btn-all">all</button>
+                    <button class="company-btn btn-changas">changas</button>
+                    <button class="company-btn btn-vans">vans</button>
+                    <button class="company-btn btn-puma">Puma</button>
+                    <button class="company-btn btn-random">Random</button>
+                </article>
+                <!-- price -->
+                <h5>Price</h5>
+                <form class="price-form">
+                    <input type="range" class="price-filter" min="0" value="12000" max="12000">
+                </form>
+                <span class="price-value">Value : $12000</span>
+            </div>
+        </div>
+        <!-- en of filter -->
+        <div class="products-center">            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="images/hero.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="6IT3UwzJ8xBEjndsYnS0vA"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Mint</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                  
+                    <img src="product-1.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1UZwNsFyNyXawL4K46wNTU"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Escocesas</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-23.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3wlIqFZSmhhsBpemRxv0Tc"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Rosas</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-21.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="5FVtHCNOgl92uEPCDhUpDY"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Tommy</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                   
+                    <img src="product-7.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="2amNaDFGAwQLmUc9qKsA23"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Coral</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-6.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="2Hwik9CUQRHAvXu6QhGiIU"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Harmony</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-4.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="Z1hjFQfwjvpcrAvD7rgYr"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Mil Rayas Rojas</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-1.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3qK36Qfu9cA8qdJXzjS7Vs"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Berry</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-25.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="79pt29AQDFpGDc5iTx5TPT"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas City</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-9.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="uuS6tVAUvK1KfwdNVrHBo"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Mil Rayas Azul</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-25.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3lku5k7g97TjKFNqj3hjYo"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Chelsea</h3>
+                    <h4>$3000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-22.jpg" width="40%" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="45VEOnbpCKN6OMY4ArKIkX"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Panamá</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-21.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1eauAQcZC2Mi5E2cJGXF49"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Vans Chess</h3>
+                    <h4>$9000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="vans_boots.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3dHJECKScJHi6kpm2rdVFB"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Vans OTW Sidewall</h3>
+                    <h4>$10000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-9.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="7wkWHhSIpZg1ZfEOIHB3FW"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Vans Boots</h3>
+                    <h4>$12000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-8.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="7tmCDVIaJKp2Z9vJUeJ2DR"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Vans Classic *25% off*</h3>
+                    <h4>$8000</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-7.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="43huOIjOut8jjW5QQEFSiG"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>632
+                <div class="product-footer">
+                    <h3>Changas Picnic</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-6.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="7MTUO9qjeYq57Q6nx0oqwB"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Changas Comics</h3>
+                    <h4>$3500</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="vans_chess.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1VyG0Exnd7SOh1mccS6iwr"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Gorra Roja Random</h3>
+                    <h4>$1200</h4>
+                </div>
+            </article>
+            <!-- end of single product-->            
+            <!-- single product-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="product-6.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="3kho0KRT4d9yGQOD8yC1Zb"><i class="fas fa-shopping-cart"></i>
+                    add to cart
+                    </button>
+                </div>
+                <div class="product-footer">
+                    <h3>Gorra Negra Puma</h3>
+                    <h4>$1500</h4>
+                </div>
+            </article>
+            <!-- end of single product--><div class="products-center-message hide">
+                        sorry, no products matched your search
+                    </div></div> 
+        <template product-template=""></template>
+    </section>
+    <!-- end of products -->
+        <!-- sidebar -->
+        <div class="sidebar-overlay">
+            <aside class="sidebar">
+                <!-- close -->
+                <button class="sidebar-close"><i class="fas fa-times"></i></button>
+                <!-- links -->
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="index.html" class="sidebar-link"><i class="fas fa-home fa-fw"></i>home</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="sidebar-link"><i class="fas fa-shopping-basket fa-fw"></i>products</a>
+                    </li>
+                    <li>
+                        <a href="pages/about.html" class="sidebar-link"><i class="fas fa-book fa-fw"></i>about</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <!-- end of sidebar -->
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- cart item -->
+                <!-- <div class="cart-item">
+                </div> -->
+                <!-- end of cart item -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <div class="cart-footer-banner-btn">
+                    <button class="clear-cart banner-btn">clear cart</button>
+                    <button class="check-out-cart banner-btn disabled" disabled="">check out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart -->
+    <!-- login form -->
+    <div class="login-form-container">
+        <div class="main">
+            <span class="close-login-form">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Welcome!</h2>
+            <form id="form_id" method="post" name="myform">
+                <label>User Name :</label>
+                <input type="text" name="username" id="username" autocomplete="username">
+                <label>Password :</label>
+                <input type="password" name="password" id="password" autocomplete="current-password">
+                <input type="button" value="LOGIN" id="submit" onclick="validate()">
+            </form>
+            <span><b class="note">Note : </b>For this demo use following username and password. <br><b class="valid">User Name : koko<br>Password : koko</b></span>
+        </div>
+    </div>
+    <!-- end of login form -->
+    <!-- WhatsApp floating Button -->
+    <div class="whatsApp-floating-button">
+        <a href="products.html" class="float" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp my-float"></i>
+        </a>
+    </div>
+    <!-- End of WhatsApp floating Button -->
+    <!-- footer -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Live simpler. Live in Changas®️</h3>
+                <p>
+                    We truly hope you enjoy wearing this collection as much as we enjoyed making it and imagining it in everyone’s feet. Today more than ever, the journey is made by doing, step by step, one day after the other.
+                </p>
+                <div class="social">
+                    <a href="file:///F:/Coderhouse-Javascript-final-project-Shopping-cart-master/pages/products.html" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/karishmachilhate?igshid=NDk5N2NlZjQ=" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/KarishmaChilha1?s=20" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com/@karishmachilhate6523" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/karishma-chilhate-5b4a28229" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>  
+                
+            </div>
+            <div class="column links">
+                <h3>Information</h3>
+                <ul>
+                    <li>
+                        <a href="pages/faqs.html">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="pages/cookiepolicy.html">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="pages/terms.html">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="pages/contact.html">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <a href="tel:7114937864" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i> 7114937864</a>
+                    </li>
+                    <li>
+                        <a href="karishmatabbu@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i>karishmatabbu@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/search/sage+university+bhopal+location/@23.1849414,77.512582,16z/data=!3m1!4b1" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-signs"></i>TKC India</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <form name="form1" action="products.html">
+                        <input class="newsletter-mail-input" type="email" name="text1" placeholder="Your email id here">
+                        <button type="button" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- end of footer -->
+<!-- end of footer --> 
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- app js -->
+    <script src="../js/app.js"></script>
+    <!-- Jquery, Popper & js Plugins for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> -->
+
+
+
+    <!-- contentful -->
+    <!-- <script src="./Galaxy Store _ Products_files/contentful.browser.min.js.download"></script> -->
+    <!-- app js -->
+    <!-- <script src="./Galaxy Store _ Products_files/app.js.download"></script> -->
+    <!-- Jquery, Popper & js Plugins for Bootstrap -->
+    <!-- <script src="./Galaxy Store _ Products_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="./Galaxy Store _ Products_files/popper.min.js.download" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <!-- <script src="./Galaxy Store _ Products_files/bootstrap.min.js.download" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!-- Sweet Alert -->
+    <!-- <script src="file://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- Toastify -->
+    <!-- <script type="text/javascript" src="./Galaxy Store _ Products_files/toastify-js"></script> -->
+ 
+</body></html>
